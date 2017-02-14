@@ -1,0 +1,37 @@
+{
+  "name": "simple-dockerode",
+  "version": "0.1.0",
+  "description": "Wraps Dockerode container exec function to make it easier to use",
+  "main": "./index.js",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tprobinson/node-simplecontainer.git"
+  },
+  "keywords": [
+    "dockerode",
+    "docker",
+    "container",
+    "wrapper",
+    "convenience",
+    "stream",
+    "streams",
+    "exec"
+  ],
+  "author": {
+    "name": "Trevor Robinson",
+    "url": "https://keybase.io/tpr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tprobinson/node-simplecontainer/issues"
+  },
+  "homepage": "https://github.com/tprobinson/node-simplecontainer#readme",
+  "dependencies": {
+    "dockerode": "^2.3.1",
+    "isstream": "^0.1.2",
+    "streambattery": "^0.1.0"
+  }
+}
