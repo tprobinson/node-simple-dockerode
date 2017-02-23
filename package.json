@@ -1,6 +1,6 @@
 {
   "name": "simple-dockerode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wraps Dockerode container exec function to make it easier to use",
   "main": "./index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tprobinson/node-simplecontainer.git"
+    "url": "git+https://github.com/tprobinson/node-simple-dockerode.git"
   },
   "keywords": [
     "dockerode",
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tprobinson/node-simplecontainer/issues"
+    "url": "https://github.com/tprobinson/node-simple-dockerode/issues"
   },
-  "homepage": "https://github.com/tprobinson/node-simplecontainer#readme",
+  "homepage": "https://github.com/tprobinson/node-simple-dockerode#readme",
   "dependencies": {
     "dockerode": "^2.3.1",
     "isstream": "^0.1.2",
