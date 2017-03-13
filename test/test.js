@@ -1,3 +1,4 @@
+'use strict';
 /* global describe:false, afterEach:false step:false */
 const assert = require('chai').assert;
 const SimpleDockerode = require('../lib/index.js');
