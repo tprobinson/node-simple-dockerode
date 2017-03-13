@@ -35,8 +35,10 @@
     "streambattery": "^0.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
+    "eslint": "^3.17.1",
     "mocha": "^3.2.0",
     "mocha-steps": "^1.0.2"
   }

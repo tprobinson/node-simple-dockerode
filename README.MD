@@ -1,16 +1,34 @@
 # Simple-Dockerode
+<!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Usage](#usage)   
+- [Properties and Methods](#properties-and-methods)   
+   - [`exec()`](#exec)   
+   - [`execRaw()`](#execraw)   
+- [Testing](#testing)   
+
+<!-- /MDTOC -->
+
 Wraps Dockerode container exec function to make it easier to use.
 
 Wrangling streams and four levels of callbacks on exec is a pain. This makes it simpler, hopefully.
 
-<!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+[![https://nodei.co/npm/simple-dockerode.svg?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/simple-dockerode.svg?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/simple-dockerode)
 
-- [Usage](#usage)
-- [Properties and Methods](#properties-and-methods)
-   - [`exec()`](#exec)
-   - [`execRaw()`](#execraw)
+[![npm version](https://badge.fury.io/js/simple-dockerode.svg)](https://badge.fury.io/js/simple-dockerode)
+[![Dependency Status](https://david-dm.org/tprobinson/node-simple-dockerode.svg)](https://david-dm.org)
 
-<!-- /MDTOC -->
+master: [![Build Status](https://travis-ci.org/tprobinson/node-simple-dockerode.svg?branch=master)](https://travis-ci.org/tprobinson/node-simple-dockerode)
+[![Docs Status](https://inch-ci.org/github/tprobinson/node-simple-dockerode.svg?branch=master)](https://inch-ci.org/github/tprobinson/node-simple-dockerode)
+
+dev: [![Build Status](https://travis-ci.org/tprobinson/node-simple-dockerode.svg?branch=dev)](https://travis-ci.org/tprobinson/node-simple-dockerode)
+[![Docs Status](https://inch-ci.org/github/tprobinson/node-simple-dockerode.svg?branch=dev)](https://inch-ci.org/github/tprobinson/node-simple-dockerode)
+
+[![bitHound Overall Score](https://www.bithound.io/github/tprobinson/node-simple-dockerode/badges/score.svg)](https://www.bithound.io/github/tprobinson/node-simple-dockerode)
+[![bitHound Code](https://www.bithound.io/github/tprobinson/node-simple-dockerode/badges/code.svg)](https://www.bithound.io/github/tprobinson/node-simple-dockerode)
+[![Code Climate](https://codeclimate.com/github/tprobinson/node-simple-dockerode/badges/gpa.svg)](https://codeclimate.com/github/tprobinson/node-simple-dockerode)
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/tprobinson/simple-dockerode/issues)
 
 ## Usage
 
@@ -106,19 +124,19 @@ Arguments:
 #### Options
 
 
-###### stdout
+##### stdout
 Default: `false`
 
 When set to true, the exec's stdout will be returned to you in results.
 
-###### stderr
+##### stderr
 Default: `false`
 
 When set to true, the exec's stderr will be returned to you in results.
 
 Actually, setting either `stdout` or `stderr` will return both of them anyway.
 
-###### stdin
+##### stdin
 Default: `null`
 
 This option supports either a string or a Readable Stream. The contents will be sent to the exec's stdin pipe.
@@ -126,7 +144,7 @@ This option supports either a string or a Readable Stream. The contents will be 
 If you're using live mode (`live: true`), then you should also set `stdin` if you want to be able to pipe into the returned stream object. It will not pipe the content for you, so you can just set `stdin: true`, or any other truthy value.
 
 
-###### live
+##### live
 Default: `false`
 
 This mode will allow you to manipulate the streams yourself. You must add `stdout: true`, `stderr: true`, `stdin: true`, or any combination.
@@ -136,7 +154,7 @@ Instead of calling your callback with (err, results), it calls it with `(err, st
 ### `execRaw()`
 The original exec function in Dockerode, preserved under this name if you want to use it.
 
-# Testing
+## Testing
 Run `npm test` to execute the test suite. You may need `sudo` if your user does not have permissions to access Docker.
 
 The tests require that your local machine is running an instance of Docker, can pull an image from Docker Hub, and is not already running a container called `simple-dockerode-test`.
