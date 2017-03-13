@@ -1,10 +1,10 @@
 {
   "name": "simple-dockerode",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Wraps Dockerode container exec function to make it easier to use",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "./test.js"
+    "test": "mocha --require mocha-steps"
   },
   "repository": {
     "type": "git",
@@ -33,5 +33,13 @@
     "dockerode": "^2.3.1",
     "isstream": "^0.1.2",
     "streambattery": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.17.1",
+    "mocha": "^3.2.0",
+    "mocha-steps": "^1.0.2"
   }
 }
