@@ -1,6 +1,6 @@
 {
   "name": "simple-dockerode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wraps Dockerode container exec function to make it easier to use",
   "main": "./lib/index.js",
   "scripts": {
