@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
-    "chai": "^3.5.0",
+    "chai": "^4.1.2",
     "chai-as-promised": "^6.0.0",
-    "eslint": "^3.17.1",
-    "mocha": "^3.2.0",
+    "eslint": "^4.12.1",
+    "mocha": "^4.0.1",
     "mocha-steps": "^1.0.2"
   },
   "resolutions": {
@@ -54,6 +54,12 @@
     "string-width": "2.0.0",
     "is-fullwidth-code-point": "2.0.0",
     "concat-stream": "1.6.0",
-    "glob": "7.1.2"
+    "glob": "7.1.2",
+    "chalk": "2.3.0",
+    "ansi-styles": "3.2.0",
+    "has-flag": "2.0.0",
+    "globals": "11.0.1",
+    "strip-ansi": "4.0.0",
+    "ansi-regex": "3.0.0"
   }
 }
