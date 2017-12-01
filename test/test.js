@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 const SimpleDockerode = require('../lib/index.js');
 const Stream = require('stream');
 const StreamBattery = require('streambattery');
-/* eslint-disable max-nested-callbacks */
+/* eslint max-nested-callbacks:0 no-console:0 */
 
 const nonce = 'test';
 const rand = 100;
