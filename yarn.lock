@@ -88,11 +88,11 @@ ansi-escapes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.0.0.tgz#ec3e8b4e9f8064fc02c3ac9b65f1c275bda8ef92"
 
-ansi-regex@^2.0.0, ansi-regex@^3.0.0:
+ansi-regex@3.0.0, ansi-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
 
-ansi-styles@^2.2.1, ansi-styles@^3.1.0:
+ansi-styles@3.2.0, ansi-styles@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.0.tgz#c159b8d5be0f9e5a6f346dab94f16ce022161b88"
   dependencies:
@@ -178,9 +178,9 @@ callsites@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-0.2.0.tgz#afab96262910a7f33c19a5775825c69f34e350ca"
 
-chai-as-promised@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/chai-as-promised/-/chai-as-promised-6.0.0.tgz#1a02a433a6f24dafac63b9c96fa1684db1aa8da6"
+chai-as-promised@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/chai-as-promised/-/chai-as-promised-7.1.1.tgz#08645d825deb8696ee61725dbf590c012eb00ca0"
   dependencies:
     check-error "^1.0.2"
 
@@ -195,7 +195,7 @@ chai@^4.1.2:
     pathval "^1.0.0"
     type-detect "^4.0.0"
 
-chalk@^1.1.3, chalk@^2.0.0, chalk@^2.1.0:
+chalk@2.3.0, chalk@^1.1.3, chalk@^2.0.0, chalk@^2.1.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.0.tgz#b5ea48efc9c1793dccc9b4767c93914d3f2d52ba"
   dependencies:
@@ -328,7 +328,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
+escape-string-regexp@1.0.5, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
@@ -478,7 +478,7 @@ glob@7.1.2, glob@^7.0.3, glob@^7.0.5, glob@^7.1.2:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^10.0.0, globals@^11.0.1:
+globals@11.0.1, globals@^10.0.0, globals@^11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.0.1.tgz#12a87bb010e5154396acc535e1e43fc753b0e5e8"
 
@@ -501,13 +501,7 @@ growl@1.10.3:
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.3.tgz#1926ba90cf3edfe2adb4927f5880bc22c66c790f"
 
-has-ansi@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
-  dependencies:
-    ansi-regex "^2.0.0"
-
-has-flag@^1.0.0, has-flag@^2.0.0:
+has-flag@2.0.0, has-flag@^1.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
 
@@ -593,7 +587,7 @@ is-resolvable@^1.0.0:
   dependencies:
     tryit "^1.0.1"
 
-isarray@0.0.1, isarray@1.0.0, isarray@~1.0.0:
+isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
@@ -691,7 +685,7 @@ mocha@^4.0.1:
     mkdirp "0.5.1"
     supports-color "4.4.0"
 
-ms@0.7.2, ms@2.0.0:
+ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
@@ -787,7 +781,7 @@ pump@^1.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
-readable-stream@2.2.3, readable-stream@^2.0.0, readable-stream@^2.0.5, readable-stream@^2.2.2, readable-stream@~1.0.26-4, readable-stream@~2.0.0:
+readable-stream@2.2.3, readable-stream@^2.0.0, readable-stream@^2.0.5, readable-stream@^2.2.2, readable-stream@~1.0.26-4:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.3.tgz#9cf49463985df016c8ae8813097a9293a9b33729"
   dependencies:
@@ -886,7 +880,7 @@ string_decoder@~0.10.x:
   version "0.10.31"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
 
-strip-ansi@^3.0.0, strip-ansi@^4.0.0:
+strip-ansi@4.0.0, strip-ansi@^3.0.0, strip-ansi@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
   dependencies:
@@ -896,7 +890,7 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-supports-color@3.1.2, supports-color@4.4.0, supports-color@^2.0.0, supports-color@^4.0.0:
+supports-color@3.1.2, supports-color@4.4.0, supports-color@^4.0.0:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.1.2.tgz#72a262894d9d408b956ca05ff37b2ed8a6e2a2d5"
   dependencies:
@@ -962,7 +956,7 @@ type-detect@1.0.0, type-detect@^4.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-1.0.0.tgz#762217cc06db258ec48908a1298e8b95121e8ea2"
 
-typedarray@^0.0.6, typedarray@~0.0.5:
+typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
