@@ -1,11 +1,13 @@
 # Simple-Dockerode
+
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Usage](#usage)
-- [Properties and Methods](#properties-and-methods)
-   - [`exec()`](#exec)
-   - [`execRaw()`](#execraw)
-- [Testing](#testing)
+- [Dockerode Compatibility](#Dockerode-Compatibility)   
+- [Usage](#Usage)   
+- [Properties and Methods](#Properties-and-Methods)   
+   - [`exec()`](#exec)   
+   - [`execRaw()`](#execRaw)   
+- [Testing](#Testing)   
 
 <!-- /MDTOC -->
 
@@ -29,6 +31,14 @@ dev: [![Build Status](https://travis-ci.org/tprobinson/node-simple-dockerode.svg
 [![Code Climate](https://codeclimate.com/github/tprobinson/node-simple-dockerode/badges/gpa.svg)](https://codeclimate.com/github/tprobinson/node-simple-dockerode)
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/tprobinson/simple-dockerode/issues)
+
+## Dockerode Compatibility
+| Version       | Pull And Launch | Get Output | Send Input | Tests Pass |
+| ------------- | --------------- | ---------- | ---------- | ---------- |
+| 1.0.0         | No              | No         | No         | No         |
+| 1.1.0 - 2.0.0 | Yes             | No         | No         | No         |
+| 2.1.0 - 2.2.0 | Yes             | Yes        | No         | No         |
+| 2.3.0 - 2.5.5 | Yes             | Yes        | Yes        | Yes        |
 
 ## Usage
 
