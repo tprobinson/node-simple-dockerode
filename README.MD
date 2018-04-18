@@ -1,11 +1,11 @@
 # Simple-Dockerode
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Usage](#usage)   
-- [Properties and Methods](#properties-and-methods)   
-   - [`exec()`](#exec)   
-   - [`execRaw()`](#execraw)   
-- [Testing](#testing)   
+- [Usage](#usage)
+- [Properties and Methods](#properties-and-methods)
+   - [`exec()`](#exec)
+   - [`execRaw()`](#execraw)
+- [Testing](#testing)
 
 <!-- /MDTOC -->
 
@@ -150,6 +150,20 @@ Default: `false`
 This mode will allow you to manipulate the streams yourself. You must add `stdout: true`, `stderr: true`, `stdin: true`, or any combination.
 
 Instead of calling your callback with (err, results), it calls it with `(err, streamLink)`, where `streamLink` is a function that can be called with up to two arguments. These arguments are directly fed to Dockerode's modem demuxer, and must be Writeable Stream objects. `streamLink()` returns the (possibly) muxed stream object, allowing you to attach events like `.on('end')`.
+
+##### createOpts
+Default: `null`
+
+This option is a direct interface to Dockerode's options on the normal `exec` function. Anything specified here will override other options.
+
+**Be careful** when using this option, as you may override something that one of the simple-dockerode options has already set.
+
+##### execOpts
+Default: `null`
+
+This option is a direct interface to Dockerode's options on the normal `start` function. Anything specified here will override other options.
+
+**Be careful** when using this option, as you may override something that one of the simple-dockerode options has already set.
 
 ### `execRaw()`
 The original exec function in Dockerode, preserved under this name if you want to use it.
