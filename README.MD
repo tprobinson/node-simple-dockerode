@@ -26,8 +26,6 @@ master: [![Build Status](https://travis-ci.org/tprobinson/node-simple-dockerode.
 dev: [![Build Status](https://travis-ci.org/tprobinson/node-simple-dockerode.svg?branch=dev)](https://travis-ci.org/tprobinson/node-simple-dockerode)
 [![Docs Status](https://inch-ci.org/github/tprobinson/node-simple-dockerode.svg?branch=dev)](https://inch-ci.org/github/tprobinson/node-simple-dockerode)
 
-[![bitHound Overall Score](https://www.bithound.io/github/tprobinson/node-simple-dockerode/badges/score.svg)](https://www.bithound.io/github/tprobinson/node-simple-dockerode)
-[![bitHound Code](https://www.bithound.io/github/tprobinson/node-simple-dockerode/badges/code.svg)](https://www.bithound.io/github/tprobinson/node-simple-dockerode)
 [![Code Climate](https://codeclimate.com/github/tprobinson/node-simple-dockerode/badges/gpa.svg)](https://codeclimate.com/github/tprobinson/node-simple-dockerode)
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/tprobinson/simple-dockerode/issues)
